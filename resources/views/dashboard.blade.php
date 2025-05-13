@@ -1,11 +1,16 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+<<<<<<< HEAD
             Posts
+=======
+            {{ __('Dashboard') }}
+>>>>>>> 4b3e48158447039e1cb72165fa86a2095ad11b10
         </h2>
     </x-slot>
 
     <div class="py-12">
+<<<<<<< HEAD
         @foreach($posts as $post)
             <div class="mt-3">
                 <div class="max-w-w7xl mx-auto sm:px-6 lg:px-8">
@@ -32,5 +37,14 @@
                 </div>
             </div>
         @endforeach
+=======
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900">
+                    {{ __("You're logged in!") }}
+                </div>
+            </div>
+        </div>
+>>>>>>> 4b3e48158447039e1cb72165fa86a2095ad11b10
     </div>
 </x-app-layout>

@@ -29,10 +29,11 @@ class MainController extends Controller
         echo 'Create Post';
     }
 
-    public function deletePost()
+    public function deletePost($id)
     {
+        $post = Posts::find($id);
         //gate
-        if (Gate::denies('post.delete'))
+        if (Gate::denies('post.delete', $post))
         {
             abort(403, 'Voçé nao tem permissão para deleta um post.');
         }

@@ -13,11 +13,7 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-<<<<<<< HEAD
                         Posts
-=======
-                        {{ __('Dashboard') }}
->>>>>>> 4b3e48158447039e1cb72165fa86a2095ad11b10
                     </x-nav-link>
                 </div>
             </div>

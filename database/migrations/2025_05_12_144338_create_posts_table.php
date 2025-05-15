@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('user_id')->unsigned();
             $table->string('title', 100);
-            $table->text('content', 1000);
+            $table->text('content');
             $table->timestamps();
         });
     }
